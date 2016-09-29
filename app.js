@@ -5,6 +5,17 @@ var species = {
 };
 
 function main(){
+
+	$(".button").click(function(){
+		var buttonType = $(this).data("animal");
+		
+		var valeur = species[buttonType];
+		$("img").attr('src', "img/"  + valeur);
+
+
+	});
+	
+}
 	/* 
 	tout votre code doit se trouver dans cette fonction,
 	vous pouvez biensur créer d'autres fonctions si nécessaire
@@ -19,9 +30,10 @@ function main(){
 	// Conseils : avancez étape par étape, console.log et debugger autant que nécessaires !
 	
 	
-	 
-}
+	
 
-$(document).ready(function(){
-	main();
-});
+
+
+	$(document).ready(function(){
+		main();
+	});
