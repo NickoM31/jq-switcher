@@ -6,10 +6,9 @@ function main(){
 		var valeur = species[buttonType];
 		$("img").attr('src', "img/"  + valeur);
 
-
 	});
 	
 }
-	$(document).ready(function(){
-		main();
-	});
+$(document).ready(function(){
+	main();
+});
